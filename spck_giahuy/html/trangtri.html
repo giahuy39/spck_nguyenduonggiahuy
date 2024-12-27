@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Trí Tết</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: #d32f2f;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #b71c1c;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+        #home {
+            background: #ffebee;
+            padding: 50px 0;
+        }
+        #decorations .decoration-grid {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .decoration {
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 5px;
+            text-align: center;
+            max-width: 200px;
+        }
+        .decoration img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .decoration button {
+            background: #d32f2f;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        form label {
+            margin-top: 10px;
+        }
+        form input, form textarea {
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        form button {
+            margin-top: 15px;
+            background: #d32f2f;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+        footer {
+            background: #b71c1c;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        .nut{
+        background-color: #ff6600;
+        color: #fff;
+        border: none;
+        padding: 10px 15px;
+        margin-left: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+        transition: background-color 0.3s, transform 0.2s;
+        }
+        .nhapvo{
+        text-decoration: none;
+        color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Chào Mừng Đến Với Trang Trí Tết</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Trang Chủ</a></li>
+                <li><a href="../html/trangtri.html">Trang Trí</a></li>
+                <li><a href="./thucpham.html">Thực phẩm</a></li>
+                <li><a href="./lienhe.html">Liên Hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Trang Trí Tết Rực Rỡ</h2>
+        <p>Khám phá những ý tưởng trang trí Tết độc đáo và ấm áp cho ngôi nhà của bạn.</p>
+        <button class="nut"><a class="nhapvo" href="https://kidohomes.vn/cam-nang-tu-van/y-tuong-trang-tri-nha-cua-don-tet.html?srsltid=AfmBOopzxRttzInQ1T8ZUnE3XKyBK9KF32lHq0o1bH0PXVndTN2m8wQS">Tìm Hiểu Ngay</a></button>
+    </section>
+
+    <section id="decorations">
+        <h2>Sản Phẩm Trang Trí Tết</h2>
+        <div class="decoration-grid">
+            <div class="decoration">
+                <img src="../img/gettyimages-1390571094-640x640.jpg" alt="Lồng Đèn Tết">
+                <h3>Lồng Đèn Tết</h3>
+                <p>Giá: 150,000₫</p>
+                <button>Thêm vào giỏ</button>
+            </div>
+            <div class="decoration">
+                <img src="../img/527M300-300CM-3-THAN.webp" alt="Hoa Mai">
+                <h3>Hoa Mai </h3>
+                <p>Giá: 300,000₫</p>
+                <button>Thêm vào giỏ</button>
+            </div>
+            <div class="decoration">
+                <img src="../img/cau chuc tet 4 chu_hinh 7.jpg" alt="Câu Đối Tết">
+                <h3>Câu Đối Tết</h3>
+                <p>Giá: 100,000₫</p>
+                <button>Thêm vào giỏ</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>Về Chúng Tôi</h2>
+        <p>Chúng tôi cung cấp các sản phẩm trang trí Tết chất lượng, mang lại không gian ấm áp và hạnh phúc cho mọi gia đình.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Liên Hệ</h2>
+        <form>
+            <label for="name">Tên:</label>
+            <input type="text" id="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <label for="message">Tin nhắn:</label>
+            <textarea id="message" required></textarea>
+            <button type="submit">Gửi</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Trang Trí Tết. All rights reserved.</p>
+    </footer>
+</body>
+</html>

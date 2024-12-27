@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Ký - Chợ Tết</title>
+    <link rel="stylesheet" href="../css/dangki.css">
+</head>
+<body>
+    <header>
+        <h1>Chào mừng đến với Chợ Tết</h1>
+        <p>Nơi mua sắm trọn vẹn cho mùa xuân!</p>
+    </header>
+
+    <nav>
+        <a href="../index.html">Trang chủ</a>
+        <a href="#clothing">Trang phục</a>
+        <a href="#decorations">Trang trí</a>
+        <a href="#food">Thực phẩm</a>
+        <a href="#contact">Liên hệ</a>
+    </nav>
+
+    <section class="login">
+        <h2>Đăng Ký</h2>
+        <form action="/register" method="POST">
+            <label for="username">Tên đăng nhập</label>
+            <input type="text" id="username" name="username" placeholder="Nhập tên đăng nhập" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Nhập email" required>
+
+            <label for="password">Mật khẩu</label>
+            <input type="password" id="password" name="password" placeholder="Nhập mật khẩu" required>
+
+            <button type="submit">Đăng Ký</button>
+            <a href="./dangnhap.html">Đã có tài khoản? Đăng nhập</a>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Chợ Tết | <a href="#privacy">Chính sách bảo mật</a></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Quần Áo Tết</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: #d32f2f;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #b71c1c;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+        #home {
+            background: #ffebee;
+            padding: 50px 0;
+        }
+        #products .product-grid {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .product {
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 5px;
+            text-align: center;
+            max-width: 200px;
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .product button {
+            background: #d32f2f;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        form label {
+            margin-top: 10px;
+        }
+        form input, form textarea {
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        form button {
+            margin-top: 15px;
+            background: #d32f2f;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+        footer {
+            background: #b71c1c;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Chào Mừng Đến Với Shop Quần Áo Tết</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Trang Chủ</a></li>
+                <li><a href="./trangtri.html">Trang Trí</a></li>
+                <li><a href="./thucpham.html">Thực phẩm</a></li>
+                <li><a href="./lienhe.html">Liên Hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Khám Phá Bộ Sưu Tập Tết 2024</h2>
+        <p>Những mẫu quần áo đẹp nhất để bạn và gia đình đón Tết trọn vẹn.</p>
+        <button>Mua Ngay</button>
+    </section>
+
+    <section id="products">
+        <h2>Sản Phẩm Nổi Bật</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="../img/b82ec850dc9529c078fa97e61e9ccade.jpeg" alt="Áo Dài Tết">
+                <h3>Áo Dài Truyền Thống</h3>
+                <p>Giá: 500,000₫</p>
+                <button>Thêm vào giỏ</button>
+            </div>
+            <div class="product">
+                <img src="../img/mau-bo-vest-nam-luxury-sang-trong-dang-cap-26.jpg" alt="Vest Tết">
+                <h3>Vest Nam Sang Trọng</h3>
+                <p>Giá: 1,200,000₫</p>
+                <button>Thêm vào giỏ</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>Về Chúng Tôi</h2>
+        <p>Shop Quần Áo Tết chuyên cung cấp các mẫu thời trang độc đáo, phong cách cho mùa lễ hội.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Liên Hệ</h2>
+        <form>
+            <label for="name">Tên:</label>
+            <input type="text" id="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <label for="message">Tin nhắn:</label>
+            <textarea id="message" required></textarea>
+            <button type="submit">Gửi</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Shop Quần Áo Tết. All rights reserved.</p>
+    </footer>
+</body>
+</html>
