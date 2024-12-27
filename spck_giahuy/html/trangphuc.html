@@ -51,7 +51,7 @@
             padding: 15px;
             border-radius: 5px;
             text-align: center;
-            max-width: 200px;
+            /* max-width: 200px; */
         }
         .product img {
             width: 100%;
@@ -95,6 +95,31 @@
             padding: 10px 0;
             margin-top: 20px;
         }
+        .nut{
+        background-color: #ff6600;
+        color: #fff;
+        border: none;
+        padding: 10px 15px;
+        margin-left: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+        transition: background-color 0.3s, transform 0.2s;
+        }
+        .nhapvo{
+        text-decoration: none;
+        color: white;
+        }
+        .hero{
+            text-align: center;
+            background: url('../img/maxresdefault.jpg') no-repeat center;
+            background-size: cover;
+            object-fit: cover;
+            color: white;
+            padding: 50px 20px;
+            height: 80vh;
+        }
     </style>
 </head>
 <body>
@@ -108,12 +133,13 @@
                 <li><a href="./lienhe.html">Liên Hệ</a></li>
             </ul>
         </nav>
+        <section class="hero"></section>
     </header>
 
     <section id="home">
         <h2>Khám Phá Bộ Sưu Tập Tết 2024</h2>
         <p>Những mẫu quần áo đẹp nhất để bạn và gia đình đón Tết trọn vẹn.</p>
-        <button>Mua Ngay</button>
+        <button class="nut"><a class="nhapvo" href="https://4menshop.com/ao-so-mi-nam.html?gad_source=1&gclid=Cj0KCQiAvbm7BhC5ARIsAFjwNHuCJ-l2mBdoF1inu-8UtXbVelsEttl5hEth1xwz_Mrl747sh071pKwaAi6OEALw_wcB">Mua Ngay</a></button>
     </section>
 
     <section id="products">
