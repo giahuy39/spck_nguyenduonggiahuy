@@ -1,45 +1,25 @@
-// 
-
-async function loginUser(inputUsername, inputPassword) {
-    const storedUser = localStorage.getItem('user');
-    if (!storedUser) {
-        console.log('Không tìm thấy thông tin người dùng.');
-        return;
-    }
-
-    const user = JSON.parse(storedUser);
-    const hashedInputPassword = await hashPassword(inputPassword);
-
-    if (user.username === inputUsername && user.password === hashedInputPassword) {
-        console.log('Đăng nhập thành công!');
-    } else {
-        console.log('Tên người dùng hoặc mật khẩu sai.');
-    }
-}
-form.addEventListener("submit", (event) =>{
+const form_login = document.getElementById("form-login");
+form_login.addEventListener("submit", (event) => {
     event.preventDefault();
-    let get_username = form.username.value;
-    let get_password = form.password.value;
-
-    let get_user =  JSON.parse(localStorage.getItem(form.username.value))
-    if(get_user)
+    let user = {
+        Username: form_login.username.value,
+        Password:form_login.password.value
+    };
+    const get_user = JSON.parse(localStorage.getItem(form_login.username.value))
+    if (get_user)
     {
-       if (get_password == get_user.password)
+        if (get_user.Username === user.Username && get_user.Password === user.Password)
         {
-            alert("let go");
-            window.location = "../index.html";
-        }
-        else
+            alert("Login Successful!");
+            window.location.href = "../index.html"
+        } 
+        else 
         {
-            alert("sai ten hoac mat khau")
+            alert("invalid Email or Password");
         }
-    }
+    } 
     else
     {
-        alert("sai ten hoac mat khau")
+        alert("invalid Email or Password");
     }
-}) 
-loginUser('TênNgườiDùng', 'MậtKhẩu');
-
-
-
+});
