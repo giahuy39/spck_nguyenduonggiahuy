@@ -1,0 +1,35 @@
+<!-- <!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lưu Tên Người Dùng</title>
+</head>
+<body>
+    <h2>Đăng Nhập</h2>
+    <input type="text" id="username" placeholder="Nhập tên người dùng">
+    <button onclick="saveUsername()">Lưu Tên</button>
+    <p id="message"></p>
+
+    <script>
+        // Lưu tên người dùng vào localStorage
+        function saveUsername() {
+            const username = document.getElementById('username').value;
+            if (username.trim() === '') {
+                document.getElementById('message').textContent = 'Vui lòng nhập tên người dùng!';
+                return;
+            }
+            localStorage.setItem('username', username); // Lưu vào localStorage
+            document.getElementById('message').textContent = `Tên "${username}" đã được lưu!`;
+        }
+
+        // Hiển thị tên người dùng khi tải trang
+        window.onload = function() {
+            const savedUsername = localStorage.getItem('username');
+            if (savedUsername) {
+                document.getElementById('message').textContent = `Chào mừng trở lại, ${savedUsername}!`;
+            }
+        }
+    </script>
+</body>
+</html> -->
