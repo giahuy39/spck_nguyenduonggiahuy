@@ -4,137 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop Quần Áo Tết</title>
-    <style>
-        /* General Styles */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        header {
-            background-color: #d32f2f;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            background-color: #b71c1c;
-        }
-        nav ul li {
-            margin: 0 15px;
-        }
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-        }
-        section {
-            padding: 20px;
-            text-align: center;
-        }
-        #home {
-            background: #ffebee;
-            padding: 50px 0;
-        }
-        #products .product-grid {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-        .product {
-            border: 1px solid #ddd;
-            padding: 15px;
-            border-radius: 5px;
-            text-align: center;
-            /* max-width: 200px; */
-        }
-        .product img {
-            width: 100%;
-            height: auto;
-            border-radius: 5px;
-        }
-        .product button {
-            background: #d32f2f;
-            color: #fff;
-            border: none;
-            padding: 5px 10px;
-            cursor: pointer;
-        }
-        form {
-            display: flex;
-            flex-direction: column;
-            max-width: 400px;
-            margin: 0 auto;
-        }
-        form label {
-            margin-top: 10px;
-        }
-        form input, form textarea {
-            padding: 10px;
-            margin-top: 5px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-        }
-        form button {
-            margin-top: 15px;
-            background: #d32f2f;
-            color: #fff;
-            border: none;
-            padding: 10px;
-            cursor: pointer;
-        }
-        footer {
-            background: #b71c1c;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            margin-top: 20px;
-        }
-        .nut{
-        background-color: #ff6600;
-        color: #fff;
-        border: none;
-        padding: 10px 15px;
-        margin-left: 10px;
-        border-radius: 5px;
-        cursor: pointer;
-        font-weight: bold;
-        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
-        transition: background-color 0.3s, transform 0.2s;
-        }
-        .nhapvo{
-        text-decoration: none;
-        color: white;
-        }
-        .hero{
-            text-align: center;
-            background: url('../img/maxresdefault.jpg') no-repeat center;
-            background-size: cover;
-            object-fit: cover;
-            color: white;
-            padding: 50px 20px;
-            height: 80vh;
-        }
-    </style>
+    <link rel="stylesheet" href="../css/trangphuc.css">
 </head>
 <body>
+    <!-- Header -->
     <header>
-        <h1>Chào Mừng Đến Với Shop Quần Áo Tết</h1>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Trang Chủ</a></li>
-                <li><a href="./trangtri.html">Trang Trí</a></li>
-                <li><a href="./thucpham.html">Thực phẩm</a></li>
-                <li><a href="./lienhe.html">Liên Hệ</a></li>
-            </ul>
-        </nav>
-        <section class="hero"></section>
+        <div class="header-container">
+            <div class="header-left">
+                <h1>Chào mừng đến với Chợ Tết</h1>
+                <p>Nơi mua sắm trọn vẹn cho mùa xuân!</p>
+            </div>
+            <div class="header-right">
+                <button><a href="./dangnhap.html" style="color: white; text-decoration: none;">Đăng nhập</a></button>
+                <button><a href="./dangki.html" style="color: white; text-decoration: none;">Đăng ký</a></button>
+            </div>
+        </div>
     </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="./trangphuc.html">Trang phục</a>
+        <a href="./trangtri.html">Trang trí</a>
+        <a href="./thucpham.html">Thực phẩm</a>
+        <a href="./lienhe.html">Liên hệ</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Đón Tết thật phong cách!</h2>
+        <p>Giảm giá đặc biệt cho quần áo truyền thống và trang trí lễ hội.</p>
+    </section>
 
     <section id="home">
         <h2>Khám Phá Bộ Sưu Tập Tết 2024</h2>
@@ -143,12 +42,18 @@
     </section>
 
     <section id="products">
-        <h2>Sản Phẩm Nổi Bật</h2>
+        <h2>Sản Phẩm Trang Trí Tết</h2>
         <div class="product-grid">
             <div class="product">
                 <img src="../img/b82ec850dc9529c078fa97e61e9ccade.jpeg" alt="Áo Dài Tết">
                 <h3>Áo Dài Truyền Thống</h3>
                 <p>Giá: 500,000₫</p>
+                <button>Thêm vào giỏ</button>
+            </div>
+            <div class="product">
+                <img src="../img/mau-bo-vest-nam-luxury-sang-trong-dang-cap-26.jpg" alt="Vest Tết">
+                <h3>Vest Nam Sang Trọng</h3>
+                <p>Giá: 1,200,000₫</p>
                 <button>Thêm vào giỏ</button>
             </div>
             <div class="product">
@@ -179,7 +84,7 @@
     </section>
 
     <footer>
-        <p>&copy; 2024 Shop Quần Áo Tết. All rights reserved.</p>
+        <p>&copy; 2024 Chợ Tết | <a href="#privacy">Chính sách bảo mật</a></p>
     </footer>
 </body>
 </html>

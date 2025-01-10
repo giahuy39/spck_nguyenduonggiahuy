@@ -1,0 +1,223 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #fff8e1;
+    color: #333;
+}
+header {
+    background-color: #d32f2f;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.header-left h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+.header-left p {
+    margin: 5px 0;
+}
+.header-right button {
+    background: #ff6600;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s, transform 0.2s;
+}
+.header-right button:hover {
+    background: #e65100;
+    transform: translateY(-3px);
+}
+
+nav {
+    background: #b71c1c;
+    padding: 10px 0;
+    text-align: center;
+}
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+nav a:hover {
+    color: #ffccbc;
+}
+.hero {
+    text-align: center;
+    background: url('../img/maxresdefault.jpg') no-repeat center;
+    background-size: cover;
+    padding: 100px 20px;
+    color: white;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+.hero p {
+    font-size: 1.5rem;
+}
+
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#home {
+    background: linear-gradient(to bottom, #ffccbc, #ffe0b2);
+    padding: 60px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+#products .product-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.product {
+    width: 300px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+.product:hover {
+    transform: translateY(-10px);
+}
+.product img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.product button {
+    background: #d32f2f;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+.product button:hover {
+    background-color: #b71c1c;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+form label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+form input, form textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+form button {
+    margin-top: 15px;
+    background: #d32f2f;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+form button:hover {
+    background-color: #b71c1c;
+}
+footer {
+    background: #b71c1c;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+}
+.nut {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 15px 20px;
+    margin-top: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.2s;
+}
+.nut:hover {
+    background-color: #ff4500;
+    transform: translateY(-5px);
+}
+.nhapvo {
+    text-product: none;
+    color: white;
+    font-size: 16px;
+}
+.hero {
+    text-align: center;
+    background: url('../img/maxresdefault.jpg') no-repeat center;
+    background-size: cover;
+    color: white;
+    padding: 60px 20px;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+.hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+}
+footer {
+    background: #b71c1c;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+footer a {
+    color: #ffccbc;
+    text-product: none;
+}

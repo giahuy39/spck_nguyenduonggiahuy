@@ -1,4 +1,3 @@
-/* General Styles */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -75,61 +74,4 @@ nav a:hover {
 }
 .hero p {
     font-size: 1.5rem;
-}
-
-section {
-    padding: 40px 20px;
-    text-align: center;
-}
-
-.products {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 40px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-.product {
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    padding: 20px;
-    transition: transform 0.3s;
-}
-.product:hover {
-    transform: translateY(-5px);
-}
-.product img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 10px;
-}
-.product h3 {
-    margin: 10px 0;
-    font-size: 1.2rem;
-}
-.product p {
-    font-size: 1rem;
-    color: #666;
-}
-.category {
-    color: #d32f2f;
-    text-decoration: none;
-}
-.product .price:hover {
-    background: #b71c1c;
-}
-footer {
-    background: #b71c1c;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 40px;
-}
-footer a {
-    color: #ffccbc;
-    text-decoration: none;
 }
