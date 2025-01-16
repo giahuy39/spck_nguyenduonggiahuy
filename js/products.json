@@ -1,0 +1,20 @@
+[
+    {
+        "product_id": 1,
+        "product_image": "../img/b82ec850dc9529c078fa97e61e9ccade.jpeg",
+        "product_name":"Áo Dài Truyền Thống",
+        "product_pcice": 1000000
+    },
+    {
+        "product_id": 2,
+        "product_image": "../img/mau-bo-vest-nam-luxury-sang-trong-dang-cap-26.jpg",
+        "product_name":"Vest Nam Sang Trọng",
+        "product_pcice": 1000000
+    },
+    {
+        "product_id": 3,
+        "product_image": "../img/mau-bo-vest-nam-luxury-sang-trong-dang-cap-26.jpg",
+        "product_name":"Vest Nam Sang Trọng",
+        "product_pcice": 1000000
+    }
+]
