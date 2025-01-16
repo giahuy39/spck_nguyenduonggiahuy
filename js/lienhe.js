@@ -1,23 +1,20 @@
-const form_register = document.getElementById("form-register");
-form_register.addEventListener("submit", (event) => {
+const contactForm = document.getElementById("contact-form");
+
+contactForm.addEventListener("submit", (event) => {
     event.preventDefault();
-    let newUser = {
-        Username: form_register.username.value,
-        Email: form_register.email.value,
-        Password:form_register.password.value
+
+    const name = contactForm.name.value;
+    const email = contactForm.email.value;
+    const phone = contactForm.tel.value;
+    const message = contactForm.message.value;
+
+    const newUser = {
+        Username: name,
+        Email: email,
+        Phone: phone,
+        Message: message
     };
-    const get_user = JSON.parse(localStorage.getItem(form_register.username.value))
-    if (get_user)
-    {
-        if (get_user.Username === newUser.Username)
-        {
-            alert("Username already existed!");
-        } 
-    }
-    else 
-    {
-        localStorage.setItem(form_register.username.value, JSON.stringify(newUser))
-        alert("Register Successful!");
-        window.location.href = "../index.html"
-    }
+    localStorage.setItem(name, JSON.stringify(newUser));
+    alert("Cảm ơn bạn đã liên hệ.");
+    window.location.href = "../index.html";
 });
