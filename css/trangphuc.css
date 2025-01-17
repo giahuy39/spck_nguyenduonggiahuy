@@ -219,5 +219,9 @@ footer {
 }
 footer a {
     color: #ffccbc;
-    text-product: none;
+    
+} 
+.aodai{
+    text-decoration: none;
+    color: white;
 }

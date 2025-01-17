@@ -1,0 +1,356 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bộ Sưu Tập Áo Dài</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .gallery-container {
+            text-align: center;
+        }
+        .btn-show {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+        .btn-show:hover {
+            background-color: #0056b3;
+        }
+        .gallery {
+            display: none;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+        .gallery img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery-container">
+        
+        <div class="gallery" id="gallery">
+            <img src="../img/z6238148281769_fec853a8363e00cf875945528fb606f5.jpg" alt="Áo dài 1">
+            <img src="../img/z6238148294499_6a5a7e8c5cebe47b67a4333e2c2422bd.jpg" alt="Áo dài 2">
+            <img src="../img/z6238148296804_831c923821e4f06b6c2f876644be685c.jpg" alt="Áo dài 3">
+            <img src="../img/z6238148342553_503d0f5655051b3d1ae483b2b8f66861.jpg" alt="Áo dài 4">
+            <img src="../img/z6238148329311_dfe7ffe98ec995d8eb86d60468e2d2ce.jpg" alt="Áo dài 5">
+        </div>
+    </div>
+
+    <script>
+        function showGallery() {
+            const gallery = document.getElementById('gallery');
+            gallery.style.display = 'flex';
+        }
+    </script>
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bộ Sưu Tập Áo Dài</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #f9f9f9, #e6e6e6);
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .gallery-container {
+            max-width: 1200px;
+            width: 100%;
+            text-align: center;
+            padding: 20px;
+            background: #ffffff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #007bff;
+        }
+        .btn-show {
+            padding: 12px 25px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        .btn-show:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+        .gallery {
+            display: none;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .gallery img {
+            width: 250px;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery-container">
+        <h1>Bộ Sưu Tập Áo Dài</h1>
+        <button class="btn-show" onclick="showGallery()">Xem Bộ Sưu Tập Áo Dài</button>
+        <div class="gallery" id="gallery">
+            <img src="../img/z6238148281769_fec853a8363e00cf875945528fb606f5.jpg" alt="Áo dài 1">
+            <img src="../img/z6238148294499_6a5a7e8c5cebe47b67a4333e2c2422bd.jpg" alt="Áo dài 2">
+            <img src="../img/z6238148296804_831c923821e4f06b6c2f876644be685c.jpg" alt="Áo dài 3">
+            <img src="../img/z6238148342553_503d0f5655051b3d1ae483b2b8f66861.jpg" alt="Áo dài 4">
+            <img src="../img/z6238148329311_dfe7ffe98ec995d8eb86d60468e2d2ce.jpg" alt="Áo dài 5">
+        </div>
+    </div>
+
+    <script>
+        function showGallery() {
+            const gallery = document.getElementById('gallery');
+            gallery.style.display = 'flex';
+        }
+    </script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cửa Hàng Áo Dài</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #d81b60;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #c2185b;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+        #products .product-grid {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .product {
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 5px;
+            text-align: center;
+            max-width: 200px;
+            background: #fff;
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .product button {
+            background: #d81b60;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+        .product button:hover {
+            background: #c2185b;
+        }
+        footer {
+            background: #c2185b;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Chào Mừng Đến Với Cửa Hàng Áo Dài</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Trang Chủ</a></li>
+                <li><a href="../html/trangphuc.html">Trang phục</a></li>
+                <li><a href="../html/thucpham.html">Thực phẩm</a></li>
+                <li><a href="../html/lienhe.html">Liên Hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Áo Dài - Nét Đẹp Truyền Thống</h2>
+        <p>Khám phá bộ sưu tập áo dài đẹp, thanh lịch dành cho mọi dịp.</p>
+        <button class="nut"><a class="nhapvo" href="https://www.kkfashion.vn/ao-dai?&thoi-trang-cong-so&utm_campaign=22057952764&utm_medium=&&utm_term=&gad_source=1&gclid=CjwKCAiAnKi8BhB0EiwA58DA4aKhn3gc39Ljl48PHu3LKjquZnh2aW1eXElkBLo0M6Wfb4GDoWOoqRoC6V8QAvD_BwE">Mua Ngay</a>
+       <style>
+        .nut{
+            background-color: #ff6600;
+        color: #fff;
+        border: none;
+        padding: 15px 20px;
+        margin-top: 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        transition: background-color 0.3s, transform 0.2s;
+        }
+        .nhapvo{
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+        }
+       </style>
+        </button>
+    </section>
+
+    <section id="products">
+        <h2>Bộ Sưu Tập Áo Dài</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="../img/z6238148281769_fec853a8363e00cf875945528fb606f5.jpg" alt="Áo Dài Truyền Thống">
+                <h3>Áo Dài Truyền Thống</h3>
+                <p>Giá: 1,500,000₫</p>
+                <button>Thêm vào giỏ</button>
+            </div>
+            <div class="product">
+                <img src="../img/z6238148294499_6a5a7e8c5cebe47b67a4333e2c2422bd.jpg" alt="Áo Dài Cách Tân">
+                <h3>Áo Dài Phổ thông</h3>
+                <p>Giá: 500,000₫</p>
+                <button>Thêm vào giỏ</button>
+            </div>
+            <div class="product">
+                <img src="../img/z6238148296804_831c923821e4f06b6c2f876644be685c.jpg" alt="Áo Dài Cưới">
+                <h3>Áo Dài Cưới</h3>
+                <p>Giá: 3,000,000₫</p>
+                <button>Thêm vào giỏ</button>
+            </div>
+            <div class="product">
+                <img src="../img/z6238148316699_d19dfb2d6217348826dc5c00a74cdf49.jpg" alt="Áo Dài Truyền Thống">
+                <h3>Áo Dài Tết</h3>
+                <p>Giá: 1,500,000₫</p>
+                <button>Thêm vào giỏ</button>
+            </div>
+            <div class="product">
+                <img src="../img/z6238148322974_9d0d7ab9a327f257dbaae5311ab59c58.jpg" alt="Áo Dài Cách Tân">
+                <h3>Áo Dài Cao Cấp</h3>
+                <p>Giá: 1,800,000₫</p>
+                <button>Thêm vào giỏ</button>
+            </div>
+            <!-- <div class="product">
+                <img src="../img/z6238148318155_56413b8a6a2ae5a68f45b4ac6788248b.jpg" alt="Áo Dài Cưới">
+                <h3>Áo Dài Cưới</h3>
+                <p>Giá: 3,000,000₫</p>
+                <button>Thêm vào giỏ</button>
+            </div>
+            <div class="product">
+                <img src="../img/z6238148322974_9d0d7ab9a327f257dbaae5311ab59c58.jpg" alt="Áo Dài Truyền Thống">
+                <h3>Áo Dài Truyền Thống</h3>
+                <p>Giá: 1,500,000₫</p>
+                <button>Thêm vào giỏ</button>
+            </div>
+            <div class="product">
+                <img src="../img/z6238148342553_503d0f5655051b3d1ae483b2b8f66861.jpg" alt="Áo Dài Cách Tân">
+                <h3>Áo Dài Cách Tân</h3>
+                <p>Giá: 1,800,000₫</p>
+                <button>Thêm vào giỏ</button>
+            </div> -->
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>Về Chúng Tôi</h2>
+        <p>Cửa hàng Áo Dài cam kết mang đến những thiết kế đẹp, chất lượng cao, tôn vinh nét đẹp truyền thống của người phụ nữ Việt Nam.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Liên Hệ</h2>
+        <form>
+            <label for="name">Tên:</label>
+            <input type="text" id="name" placeholder="Nhập tên của bạn" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Nhập email của bạn" required>
+
+            <label for="message">Tin nhắn:</label>
+            <textarea id="message" rows="5" placeholder="Nhập tin nhắn của bạn" required></textarea>
+
+            <button type="submit">Gửi</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Cửa Hàng Áo Dài. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+
